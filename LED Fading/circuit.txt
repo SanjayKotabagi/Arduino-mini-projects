@@ -1,0 +1,28 @@
+Requirements : 
+
+Arduino uno * 1
+LED * 1
+jumper wires * 2
+
+----------------------------------------------------
+
+Connection :
+
++LED  ----> Arduino pin 6
+-LED  ----> Arduino pin GND
+
+----------------------------------------------------
+
+Working :
+
+First thing is to decalre the variable so that they can universally used anywhere.
+led is connected to pin 6.
+brightness is var that is used to maintain the brightnss of LED
+fadeAmount is var that is used to control the fading of led.
+
+setup() --> is the main function which runs only once after power supply to arduino till power is cut off & in setup we declare which pin used to do which type of work like input/output
+
+
+loop() --> led is connected to analog pin 6 so that power can be supplied in curved wavelenth,
+	created loop so that the fading goes until power is cut off..
+	You can change the duration taking to fade by changing value inside dealy(). 
